@@ -16,9 +16,14 @@ repeat
 repeat while (gear clamped) is (no) not (yes)
 :deburring;
 :cleaning;
-:check quality
-
-
+:check quality;
+:defix;
+if (quality ok) then (yes)
+:transport to end pos;
+else (no)
+:put away;
+endif 
+:end;
 
 stop
 @enduml
