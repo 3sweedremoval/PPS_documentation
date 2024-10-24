@@ -13,18 +13,18 @@ repeat while (start pressed?) is (no) not (yes)
 repeat
 :clamp;
 :check clamp;
-repeat while (gear clamped) is (no) not (yes)
+repeat while (gear clamped?) is (no) not (yes)
 :deburring;
 :cleaning;
 :check quality;
 :defix;
-if (quality ok) then (yes)
+if (quality ok?) then (yes)
 :transport to end pos;
 else (no)
 :put away;
 endif 
 :end;
-
+#testje
 stop
 @enduml
 
